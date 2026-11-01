@@ -11,6 +11,6 @@
     "node": ">=24"
   },
   "scripts": {
-    "start": "node src/index.ts"
+    "start": "node init && node src/index.ts"
   }
 }
