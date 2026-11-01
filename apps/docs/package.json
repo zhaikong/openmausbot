@@ -6,9 +6,9 @@
     "assets:sync": "node scripts/sync-assets.mjs",
     "prebuild": "pnpm assets:sync",
     "predev": "pnpm assets:sync",
-    "build": "next build",
-    "dev": "next dev",
-    "start": "next start",
+    "build": "node init && next build",
+    "dev": "node init && next dev",
+    "start": "node init && next start",
     "types:check": "next typegen && tsc --noEmit",
     "lint": "oxlint .",
     "preview": "next start"
